@@ -3,6 +3,7 @@ __pycache__
 *.sync-conflict-*
 .DS_Store
 *.swp
+*.mmdb
 *.db
 *.db-shm
 *.db-wal
@@ -12,6 +13,11 @@ log.txt
 *.log
 *.pid
 secrets.yaml
+lockfile
+releases.txt
+*.spl
+*.zip
+.bash_history
 
 bazarr/backup
 bazarr/log
@@ -19,11 +25,13 @@ bazarr/log
 Jellyfin/data
 Jellyfin/metadata
 Jellyfin/log
+Jellyfin/config/dlna
 
 prowlarr/Definitions
 
 qbittorrent/qBittorrent/BT_backup
 qbittorrent/qBittorrent/logs
+qbittorrent/qBittorrent/nova3
 
 **/MediaCover
 **/logs
@@ -31,3 +39,4 @@ qbittorrent/qBittorrent/logs
 **/asp
 **/keypairs
 **/Tokens
+**/DataProtection
