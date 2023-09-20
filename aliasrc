@@ -1,0 +1,39 @@
+# My aliases
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [ "$OSTYPE" != linux-gnu ]; then  # If Mac, use gnu version of ls
+	alias ls='gls --color --group-directories-first'
+else
+	alias ls='ls --color --group-directories-first'
+fi
+
+alias date='date +%Y.%m.%d'
+alias lah='ls -lah'
+alias lh='ls -lh'
+alias update='sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y'
+alias stinit='~/Scripts/Sync/thing/init_folder.sh'
+alias open='xdg-open'
+alias lockoff='gsettings set org.gnome.desktop.screensaver lock-enabled false'
+alias lockon='gsettings set org.gnome.desktop.screensaver lock-enabled true'
+alias ..='cd ..'
+alias .2='cd ../..'
+alias mkdir='mkdir -pv'
+alias ssh-a='ssh-add ~/.ssh/troper-main-1.0 && ssh-add ~/.ssh/troper-lan-1.0'
+# alias du='du -sh'
+alias jump='ssh jump'
+alias journal='~/Scripts/Utils/journal.sh'
+alias todo='vim ~/Documents/todo.md'
+alias shortcuts='vim ~/Documents/Shortcuts.md'
+alias shopping='vim ~/Documents/Shopping.md'
+alias rib='/home/troper/Projects/racecar/Channel-Integration/race-in-the-box/entrypoints/rib_2.1.1.sh --config=/home/troper/tmp --code=/home/troper/tmp --ssh=/home/troper/.ssh/troper-main-1.0'
+alias newenv='python3 -m venv env'
+# LOGSCRIPT='~/Scripts/Utils/journal_top.sh'
+alias i="$SCRIPTS/install/.install.sh"

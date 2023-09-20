@@ -1,0 +1,2 @@
+// The global global ignores (ie, for all st folders on a system)
+.*.swp

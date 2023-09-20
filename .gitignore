@@ -6,6 +6,12 @@ __pycache__
 *.db
 *.db-shm
 *.db-wal
+*.pickle
+log.txt
+*.synclock
+*.log
+*.pid
+secrets.yaml
 
 bazarr/backup
 bazarr/log
@@ -19,9 +25,9 @@ prowlarr/Definitions
 qbittorrent/qBittorrent/BT_backup
 qbittorrent/qBittorrent/logs
 
-*/MediaCover
-*/logs
-*/Backups
-*/asp
-
-
+**/MediaCover
+**/logs
+**/Backups
+**/asp
+**/keypairs
+**/Tokens

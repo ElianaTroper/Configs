@@ -1,0 +1,2 @@
+- Add oh-my-zsh to confs
+- Split out proper nouns from my vim spelling folder

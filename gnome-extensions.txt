@@ -1,0 +1,3 @@
+https://extensions.gnome.org/extension/19/user-themes/
+https://extensions.gnome.org/extension/545/hide-top-bar/
+https://extensions.gnome.org/extension/2015/no-title-bar-forked/
