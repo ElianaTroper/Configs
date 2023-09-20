@@ -1,2 +1,4 @@
 - Add oh-my-zsh to confs
 - Split out proper nouns from my vim spelling folder
+- nzbget - remove my server from my default conf
+- in docker compose script, replace home dir by filling
