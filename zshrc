@@ -43,7 +43,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 HIST_STAMPS="%Y.%m.%d"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+ZSH_CUSTOM=$HOME/Configs/ZSH_CUSTOM
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -88,7 +88,7 @@ source $CONFIGS/aliasrc
 if [ "$(uname -s)" != "Darwin" ]; then
 	eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 	eval `keychain --quiet --eval troper-lan-1.0 troper-main-1.0`
-"
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
