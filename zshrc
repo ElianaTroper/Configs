@@ -64,10 +64,6 @@ source $ZSH/oh-my-zsh.sh
 ## Custom exports
 source $HOME/Configs/exportrc
 
-## Adds brew
-
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
 ## export MANPATH="/usr/local/man:$MANPATH"
 
 ## You may need to manually set your language environment
@@ -86,8 +82,13 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 ## Custom aliases
 source $CONFIGS/aliasrc
 
-# Sets up keychain
-eval `keychain --quiet --eval troper-lan-1.0 troper-main-1.0`
+
+## Things only on linux
+
+if [ "$(uname -s)" != "Darwin" ]; then
+	eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+	eval `keychain --quiet --eval troper-lan-1.0 troper-main-1.0`
+"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

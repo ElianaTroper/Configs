@@ -33,7 +33,7 @@ link () {
 
 	link_home "gitconfig"
 
-	link_conf "MusicBrainz"
+	# link_conf "MusicBrainz"
 
 	# Not macs only
 	if [ "$(uname -s)" != "Darwin" ]; then
