@@ -17,6 +17,9 @@ link () {
 	ln -s $CONFIGS/$1 $2
 }
 
+git --git-dir=$(dirname -- "$( readlink -f -- "$0"; )";) submodule init
+git --git-dir=$(dirname -- "$( readlink -f -- "$0"; )";) submodule update
+
 # TODO: Make these things below a script/loop instead of hardcoding
 
 	link_home "zshrc"
